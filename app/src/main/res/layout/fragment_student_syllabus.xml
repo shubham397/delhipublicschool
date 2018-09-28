@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.dialursearch.gyanpatra.StudentSyllabusFragment">
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Class: "
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#33691e"
+        android:layout_marginLeft="5sp"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_toRightOf="@+id/txt_date"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_date"
+        android:scrollbars="vertical"
+        android:divider="#000000"
+        android:dividerHeight="2sp"
+        android:paddingBottom="60dp"
+        android:id="@+id/listView"/>
+
+</RelativeLayout>

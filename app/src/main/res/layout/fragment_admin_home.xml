@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.dialursearch.gyanpatra.AdminHomeFragment">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="HOME"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_marginTop="15sp"/>
+
+    <Button
+        android:id="@+id/btn_admin_home_addAdmin"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_margin="20sp"
+        android:layout_below="@+id/head"
+        android:text="Add Admin"/>
+
+</RelativeLayout>

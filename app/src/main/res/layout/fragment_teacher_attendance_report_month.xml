@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dialursearch.gyanpatra.TeacherAttendanceReportMonthFragment"
+    android:background="#ffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txt_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date - 12-Jan-2018: Class - NUR A: Total - 23"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:textSize="15sp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_head"
+        android:scrollbars="vertical"
+        android:divider="#000000"
+        android:dividerHeight="2sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="60dp"
+        android:id="@+id/listView_report"/>
+
+</RelativeLayout>

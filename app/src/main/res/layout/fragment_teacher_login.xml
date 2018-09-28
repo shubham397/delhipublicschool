@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.dialursearch.gyanpatra.TeacherLoginFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="TEACHER LOGIN"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_marginTop="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_user_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:textColor="#000"
+        android:layout_marginLeft="30sp"
+        android:text="TEACHER ID : "
+        />
+
+    <EditText
+        android:id="@+id/edit_user_teacher"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_user_teacher"
+        android:layout_alignBaseline="@+id/txt_user_teacher"
+        android:hint=" Enter Teacher id."
+        android:textColorHint="#b3b3b3"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/txt_pass_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_user_teacher"
+        android:layout_marginTop="50sp"
+        android:layout_alignEnd="@+id/txt_user_teacher"
+        android:layout_alignRight="@+id/txt_user_teacher"
+        android:textColor="#000"
+        android:text="PASSWORD : "
+        />
+
+    <EditText
+        android:id="@+id/edit_pass_teacher"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_pass_teacher"
+        android:layout_alignBaseline="@+id/txt_pass_teacher"
+        android:hint=" Enter Password"
+        android:inputType="textPassword"
+        android:textColorHint="#b3b3b3"
+        android:singleLine="true"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/btn_tea_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_pass_teacher"
+        android:layout_marginTop="50sp"
+        android:layout_alignStart="@+id/edit_pass_teacher"
+        android:layout_alignLeft="@+id/txt_pass_teacher"
+        android:layout_marginLeft="-30sp"
+        android:text="SUBMIT"
+        />
+
+    <Button
+        android:id="@+id/btn_tea_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btn_tea_submit"
+        android:layout_toRightOf="@id/btn_tea_submit"
+        android:text="RESET"/>
+
+</RelativeLayout>

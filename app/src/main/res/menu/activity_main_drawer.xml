@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icon_home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_studentCorner"
+            android:icon="@drawable/icon_student"
+            android:title="Student Corner"/>
+        <item
+            android:id="@+id/nav_teacherCorner"
+            android:icon="@drawable/icon_teacher"
+            android:title="Teacher Corner"/>
+        <item
+            android:id="@+id/nav_onlineStudyCenter"
+            android:icon="@drawable/icon_studycentre"
+            android:title="Online Study Center"/>
+        <item
+            android:id="@+id/nav_onlineAdmission"
+            android:icon="@drawable/icon_admission"
+            android:title="Online Admission"/>
+        <item
+            android:id="@+id/nav_onlineFee"
+            android:icon="@drawable/icon_fee"
+            android:title="Online Fee"/>
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/icon_exit"
+            android:title="Exit"/>
+    </group>
+
+
+
+</menu>

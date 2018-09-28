@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dialursearch.gyanpatra.TeacherAttendance_erpFragment"
+    android:background="#ffffff">
+
+    <Spinner
+        android:id="@+id/spinner_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_submit"
+        android:layout_marginTop="10dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spinner_class"
+        android:scrollbars="vertical"
+        android:divider="#000000"
+        android:dividerHeight="2sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="60dp"
+        android:fadeScrollbars="false"
+        android:fastScrollEnabled="true"
+        android:id="@+id/listView"/>
+
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/txt_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/spinner_class"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="15sp"
+        android:textColor="#000000"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/spinner_class"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

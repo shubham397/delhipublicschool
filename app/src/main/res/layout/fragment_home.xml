@@ -1,0 +1,1368 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.dialursearch.gyanpatra.HomeFragment"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                />
+
+            <TextView
+                android:id="@+id/txt_marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:textColor="#004d40"
+                android:text="Notice"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/head1"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#e2e2e2"
+                    android:layout_marginTop="22sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Corner"
+                    android:textColor="#000"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginBottom="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txt_student_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:textColor="#000"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginBottom="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@+id/textView"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/textView_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notice"
+                    android:textColor="#000"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginBottom="25sp"
+                    android:layout_marginLeft="310sp"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/hor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:src="@drawable/icon_stu_school_diary"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu"
+                                android:layout_centerHorizontal="true"
+                                android:text="Diary"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:textColor="#000"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:src="@drawable/icon_stu_suggestion"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu1"
+                                android:layout_centerHorizontal="true"
+                                android:text="Suggestion"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:src="@drawable/icon_stu_onlinefee"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu2"
+                                android:layout_centerHorizontal="true"
+                                android:text="Fee"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:src="@drawable/icon_stu_syllabus"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu3"
+                                android:layout_centerHorizontal="true"
+                                android:text="Syllabus"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:src="@drawable/icon_stu_model"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu4"
+                                android:layout_centerHorizontal="true"
+                                android:text="Question"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_stu_assignment" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu5"
+                                android:layout_centerHorizontal="true"
+                                android:text="Assignment"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_stu_exam" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu6"
+                                android:layout_centerHorizontal="true"
+                                android:text="Schedule"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_stu_feedback" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu7"
+                                android:layout_centerHorizontal="true"
+                                android:text="FeedBack"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_stu_freeship" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu8"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="Scholarship" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_stu_onlineteacher" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu9"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:layout_centerHorizontal="true"
+                                android:text="Teaching Desk" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_stu_school" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu10"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="Result"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_stu_permission" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu11"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:layout_centerHorizontal="true"
+                                android:text="Permission" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="20sp"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:id="@+id/btn_stu12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:background="@null"
+                                android:src="@drawable/icon_stu_grand" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_stu12"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="PTM"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/head2"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#e2e2e2"
+                    android:layout_marginTop="22sp"
+                    android:layout_below="@id/hor1"
+                    />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teacher Corner"
+                    android:textColor="#000"
+                    android:layout_below="@+id/hor1"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginBottom="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/txt_teacher_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:textColor="#000"
+                    android:layout_below="@+id/hor1"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginBottom="25sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/textView1_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notice"
+                    android:textColor="#000"
+                    android:layout_below="@+id/hor1"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginBottom="25sp"
+                    android:layout_marginLeft="310sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:scrollbars="none"
+                    android:id="@+id/hor2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_tea_attendance"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_teacher"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="Attendance"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:visibility="gone">
+
+                            <ImageButton
+                                android:id="@+id/btn_teacher1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_tea_yellow"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_teacher1"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="Yellow"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_teacher2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_tea_leave"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_teacher2"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="Leave"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_teacher3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_tea_bank"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_teacher3"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="Knowledge"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:visibility="gone">
+
+                            <ImageButton
+                                android:id="@+id/btn_teacher4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_tea_result"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_teacher4"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="Upload"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:visibility="gone">
+
+                            <ImageButton
+                                android:id="@+id/btn_teacher5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_tea_message"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_teacher5"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="Send"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_teacher6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_tea_salary"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_teacher6"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="Salary"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="20sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_teacher7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:background="@null"
+                                android:src="@drawable/icon_tea_permission"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_teacher7"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:text="Permission"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/head3"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#e2e2e2"
+                    android:layout_marginTop="22sp"
+                    android:layout_below="@id/hor2"
+                    />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online Study Center"
+                    android:textColor="#000"
+                    android:layout_below="@+id/hor2"
+                    android:layout_marginTop="25sp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/textView2_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notice"
+                    android:textColor="#000"
+                    android:layout_below="@+id/hor2"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginLeft="310sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:scrollbars="none"
+                    android:id="@+id/hor3">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageBtnGyan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gyanpatrabtn"
+                            android:scaleX=".8"
+                            android:scaleY=".7"
+                            android:src="@drawable/gyan"
+                            android:translationX="-7sp" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/head4"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#e2e2e2"
+                    android:layout_below="@id/hor3"
+                    />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online Admission"
+                    android:textColor="#000"
+                    android:layout_below="@+id/hor3"
+                    android:layout_marginBottom="15sp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/textView3_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notice"
+                    android:textColor="#000"
+                    android:layout_below="@+id/hor3"
+                    android:layout_marginBottom="25sp"
+                    android:layout_marginLeft="310sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:scrollbars="none"
+                    android:id="@+id/hor4">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                        android:id="@+id/imageBtnDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:src="@drawable/details"
+                            android:layout_marginLeft="20dp"/>
+
+                        <ImageButton
+                            android:id="@+id/imageBtnApply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/apply" />
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/head5"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#e2e2e2"
+                    android:layout_marginTop="13sp"
+                    android:layout_below="@id/hor4"
+                    />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Website"
+                    android:textColor="#000"
+                    android:layout_below="@+id/hor4"
+                    android:layout_marginTop="13sp"
+                    android:layout_marginBottom="25sp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10sp"/>
+
+                <TextView
+                    android:id="@+id/textView4_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notice"
+                    android:textColor="#000"
+                    android:layout_below="@+id/hor4"
+                    android:layout_marginTop="13sp"
+                    android:layout_marginBottom="25sp"
+                    android:layout_marginLeft="310sp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView4"
+                    android:scrollbars="none"
+                    android:id="@+id/hor5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_website"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_web_about"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_website"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:layout_centerHorizontal="true"
+                                android:text="About US"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_website1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_web_events"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_website1"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:layout_centerHorizontal="true"
+                                android:text="Events"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_website2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_web_facilities"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_website2"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:layout_centerHorizontal="true"
+                                android:text="Facilities"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_website3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_web_faculty"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_website3"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:layout_centerHorizontal="true"
+                                android:text="Faculty"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_website4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_web_result"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_website4"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:layout_centerHorizontal="true"
+                                android:text="Result"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_website5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_web_info"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_website5"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:layout_centerHorizontal="true"
+                                android:text="Links"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_website6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@null"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:src="@drawable/icon_web_activity"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_website6"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:layout_centerHorizontal="true"
+                                android:text="Activity"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="20sp">
+
+                            <ImageButton
+                                android:id="@+id/btn_website7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                android:background="@null"
+                                android:src="@drawable/icon_web_contact"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_website7"
+                                android:scaleX="0.8"
+                                android:textColor="#000"
+                                android:scaleY="0.8"
+                                android:layout_centerHorizontal="true"
+                                android:text="Contact"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+<!--
+                                <TextView
+                                    android:id="@+id/textView6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Transport"
+                                    android:textColor="#000"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/hor5"
+                                    android:layout_marginTop="25sp"
+                                    android:layout_marginBottom="15sp"/>
+
+                                <HorizontalScrollView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/textView6"
+                                    android:scrollbars="none"
+                                    android:id="@+id/hor6">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <View
+                                            android:layout_width="10sp"
+                                            android:layout_height="2dp"
+                                            android:background="#00ffffff" />
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageButton
+                                                android:id="@+id/btn_transport"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:background="@null"
+                                                android:src="@drawable/icon_student"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/btn_transport"
+                                                android:layout_centerHorizontal="true"
+                                                android:text="Study Material"/>
+                                        </RelativeLayout>
+
+                                        <View
+                                            android:layout_width="10sp"
+                                            android:layout_height="2dp"
+                                            android:background="#00ffffff" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <ImageButton
+                                                android:id="@+id/btn_transport1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:background="@null"
+                                                android:src="@drawable/icon_student"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/btn_transport1"
+                                                android:layout_centerHorizontal="true"
+                                                android:text="TextBook Solutions"/>
+                                        </RelativeLayout>
+
+                                        <View
+                                            android:layout_width="10sp"
+                                            android:layout_height="2dp"
+                                            android:background="#00ffffff" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <ImageButton
+                                                android:id="@+id/btn_transport2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:background="@null"
+                                                android:src="@drawable/icon_student"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/btn_transport2"
+                                                android:layout_centerHorizontal="true"
+                                                android:text="Revision Notes"/>
+                                        </RelativeLayout>
+
+                                        <View
+                                            android:layout_width="10sp"
+                                            android:layout_height="2dp"
+                                            android:background="#00ffffff" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <ImageButton
+                                                android:id="@+id/btn_transport3"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:background="@null"
+                                                android:src="@drawable/icon_student"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/btn_transport3"
+                                                android:layout_centerHorizontal="true"
+                                                android:text="Chapter Test"/>
+                                        </RelativeLayout>
+
+                                        <View
+                                            android:layout_width="10sp"
+                                            android:layout_height="2dp"
+                                            android:background="#00ffffff" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <ImageButton
+                                                android:id="@+id/btn_transport4"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:background="@null"
+                                                android:src="@drawable/icon_student"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/btn_transport4"
+                                                android:layout_centerHorizontal="true"
+                                                android:text="Sample Paper"/>
+                                        </RelativeLayout>
+
+                                        <View
+                                            android:layout_width="10sp"
+                                            android:layout_height="2dp"
+                                            android:background="#00ffffff" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <ImageButton
+                                                android:id="@+id/btn_transport5"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:background="@null"
+                                                android:src="@drawable/icon_student"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/btn_transport5"
+                                                android:layout_centerHorizontal="true"
+                                                android:text="Synopsis"/>
+                                        </RelativeLayout>
+
+                                        <View
+                                            android:layout_width="10sp"
+                                            android:layout_height="2dp"
+                                            android:background="#00ffffff" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <ImageButton
+                                                android:id="@+id/btn_transport6"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:background="@null"
+                                                android:src="@drawable/icon_student"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/btn_transport6"
+                                                android:layout_centerHorizontal="true"
+                                                android:text="Ask Qustion"/>
+                                        </RelativeLayout>
+
+                                        <View
+                                            android:layout_width="10sp"
+                                            android:layout_height="2dp"
+                                            android:background="#00ffffff" />
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <ImageButton
+                                                android:id="@+id/btn_transport7"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerHorizontal="true"
+                                                android:background="@null"
+                                                android:src="@drawable/icon_student"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/btn_transport7"
+                                                android:layout_centerHorizontal="true"
+                                                android:text="Discover Yourself"/>
+                                        </RelativeLayout>
+
+                                        <View
+                                            android:layout_width="10sp"
+                                            android:layout_height="2dp"
+                                            android:background="#00ffffff" />
+                                    </LinearLayout>
+                                </HorizontalScrollView>-->
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#f4f4f4"
+                    android:layout_below="@+id/hor5"
+                    android:layout_marginTop="25sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view3"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="60sp"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/txt_l"
+                    android:text="   Design &amp; Developed By - DialUrSearch Pvt. Ltd.\nLicence To - DELHI PUBLIC SCHOOL, DHANBAD"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
